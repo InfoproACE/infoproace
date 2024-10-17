@@ -55,6 +55,17 @@ li{
     margin: 10px;
 }
 
+.right button{
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: var(--infopro-col);
+}
+
+.right button:hover{
+    text-decoration: underline;
+}
+
 /* LOGO */
 
 @media (max-width: 570px) {
