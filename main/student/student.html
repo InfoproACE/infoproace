@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mitr:wght@200;300;400;500;600;700&family=Noto+Sans+Thai:wght@100..900&family=Pattaya&family=Pridi:wght@200;300;400;500;600;700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/student.css">
+</head>
+<body>
+    <header>
+        <div class="profile-info">
+            <img id="profilePic" alt="Profile Picture">
+            <span id="userProfile"></span>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </header>
+    <header>
+        <div class="logos">
+            <img src="https://i.postimg.cc/pLZ7f7RQ/image.png" alt="" class="mainlogo">
+            <img id="profilePic" alt="Profile Picture">
+            <span id="userProfile"></span>
+        </div>
+        </div>
+        <div class="right">
+            <button onclick="logout()">Logout</button>
+        </div>
+    </header>
+    <main>
+        <h1>Welcome to the Student Dashboard</h1>
+        <h1>Student Dashboard</h1>
+        <div class="menu-container">
+            <a href="" class="menu-item">
+                <div class="menu-content">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-book"></i> <!-- ไอคอนสำหรับผลการเรียนรายวิชา -->
+                    </div>
+                    <h3>ผลการเรียนรายวิชา</h3>
+                </div>
+            </a>
+            <a href="help.html" class="menu-item">
+                <div class="menu-content">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-question"></i> <!-- ไอคอนสำหรับวิธีใช้งาน -->
+                    </div>
+                    <h3>วิธีใช้งาน</h3>
+                </div>
+            </a>
+        </div>
+    </main>
+    <script src="js/student.js"></script>
+    <script src="js/st-script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- ใช้เพื่อดึง Font Awesome icons -->
+</body>
+</html>
