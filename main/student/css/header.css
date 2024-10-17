@@ -49,6 +49,12 @@ li{
     margin-right: 10px;
 }
 
+.right #profilePic,
+.right #userProfile,
+.right button{
+    padding: 10px;
+}
+
 /* LOGO */
 
 @media (max-width: 570px) {
