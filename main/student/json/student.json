@@ -1,0 +1,16 @@
+[
+    {
+        "username": "00001",
+        "password": "1234",
+        "firstName": "นายณภัทร",
+        "lastName": "ปัญโญ",
+        "profilePic": "https://i.postimg.cc/9fdTWrTp/image.png"
+    },
+    {
+        "username": "00002",
+        "password": "abcd",
+        "firstName": "นายสมชาย",
+        "lastName": "สุขสวัสดิ์",
+        "profilePic": "https://i.postimg.cc/9fdTWrTp/image.png"
+    }
+]
