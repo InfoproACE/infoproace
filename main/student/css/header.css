@@ -38,6 +38,17 @@ li{
     align-items: center;
 }
 
+#profilePic{
+    border-radius: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#userProfile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* LOGO */
 
 @media (max-width: 570px) {
