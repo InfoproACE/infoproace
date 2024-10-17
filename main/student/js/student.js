@@ -7,3 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("profilePic").src = user.profilePic;
     }
 });
+
+function logout() {
+    sessionStorage.removeItem("loggedInUser");
+    window.location.href = "s-login.html";
+}
