@@ -26,22 +26,6 @@
     </header>
     <!-- ระบบทำข้อสอบ -->
     
-    <script>
-        function adjustLogo() {
-          const logo = document.querySelector('.mainlogo');
-          const screenWidth = window.innerWidth;
-        
-          if (screenWidth <= 570) {
-            logo.src = 'https://i.postimg.cc/BZkHV2xP/image.png';
-          } else {
-            logo.src = 'https://i.postimg.cc/fLDrxwtf/image.png';
-          }
-        }
-        
-        // เรียกใช้เมื่อโหลดหน้าและเมื่อปรับขนาดหน้าจอ
-        window.addEventListener('load', adjustLogo);
-        window.addEventListener('resize', adjustLogo);
-
-    </script>
+    <script src="js/logo.js"></script>
 </body>
 </html>
