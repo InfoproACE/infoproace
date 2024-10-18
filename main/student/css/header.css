@@ -13,6 +13,7 @@ header .logos{
 
 .right{
     display: flex;
+    align-items: center;
 }
 
 ul.header{
@@ -41,6 +42,8 @@ li{
 #profilePic{
     border-radius: 100px;
     margin-right: 10px;
+    width: 32px;
+    height: 32px;
 }
 #userProfile{
     display: flex;
