@@ -74,10 +74,14 @@ header button:hover{
 }
 
 /* LOGO */
+.mainlogo{
+    width:202.88px;
+}
 
 @media (max-width: 570px) {
     .mainlogo {
         content: url('https://i.postimg.cc/BZkHV2xP/image.png');
+        width: auto !important;
     }
 }
 
