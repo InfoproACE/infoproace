@@ -83,11 +83,11 @@ header button:hover{
 @media (max-width: 1024px) {
   .window {
     display: none; /* ซ่อนโลโก้สำหรับหน้าจอขนาดใหญ่ */
+    max-width: 300px;
   }
   .phone {
     display: block; /* แสดงโลโก้สำหรับมือถือ */
     width: 100%; 
-    max-width: 300px;
     height: auto;
     margin: 0 auto;
   }
