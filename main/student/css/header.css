@@ -58,19 +58,20 @@ li{
     margin-right: 0px !important;
 }
 
-header button{
-    display: none;
-    padding: 0;
-    border: none;
-    background: transparent;
-    color: var(--infopro-col);
+header button {
+    border: 2px solid;
+    background: #ffffff;
     position: absolute;
-    padding-top: 70px;
-    margin-left: auto;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-color: #ddd;
+    color: #000;
+    right: 0;
 }
 
 header button:hover{
-    text-decoration: underline;
+    padding-right: 25px;
 }
 
 /* LOGO */
