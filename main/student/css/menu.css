@@ -18,6 +18,12 @@
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.menu-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .icon-container {
     background-color: #ff0000;
     color: #fff;
