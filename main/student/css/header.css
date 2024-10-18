@@ -68,6 +68,7 @@ header button {
     border-color: #ddd;
     color: #000;
     right: 0;
+    transition: .5s;
 }
 
 header button:hover{
