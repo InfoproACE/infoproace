@@ -74,16 +74,22 @@ header button:hover{
 }
 
 /* LOGO */
-.mainlogo {
-  width: 100%; 
-  max-width: 300px; 
-  height: auto; 
+
+.phone {
+  display: none;
 }
 
-/* สำหรับหน้าจอ iPad และมือถือ */
+/* แสดงโลโก้เฉพาะสำหรับมือถือและแท็บเล็ต (หน้าจอ ≤ 1024px) */
 @media (max-width: 1024px) {
-  .mainlogo {
-    content: url('https://i.postimg.cc/BZkHV2xP/image.png');
+  .window {
+    display: none; /* ซ่อนโลโก้สำหรับหน้าจอขนาดใหญ่ */
+  }
+  .phone {
+    display: block; /* แสดงโลโก้สำหรับมือถือ */
+    width: 100%; 
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
   }
 }
 
