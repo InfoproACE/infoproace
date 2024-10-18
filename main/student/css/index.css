@@ -1,0 +1,267 @@
+#content{
+            display: flex;
+        }
+        #left-bar{    
+            font-weight: 500;
+        }
+        .pl10 {
+            padding-left: 10px;
+        }
+        .pr10 {
+            padding-right: 10px;
+        }
+        @media (min-width: 992px) {
+            .col-md-3 {
+                width: 25%;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .col-md-9 {
+                width: 75%;
+            }
+        }
+        @media (min-width: 992px) {
+            .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+                float: left;
+                position: relative;
+            }
+        }
+        
+        #management {
+            margin-bottom: 10px;
+            background: #E8E8E8;
+            text-align: center;
+        }
+        
+        @media (max-width: 1299px) {
+            main #management h3 {
+                font-size: 20px;
+            }
+        }
+        #management h3 {
+            background: var(--infopro-col);
+            color: white;
+            font-size: 24px;
+            padding: 7px 10px 6px;
+        }
+        
+        #management h3>span {
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: 500;
+            font-size: 20px;
+        }
+        
+        #management h4 {
+            font-size: 22px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 0;
+            letter-spacing: 1px;
+        }
+                
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 300;
+            line-height: initial;
+        }
+        .h4, .h5, .h6, h4, h5, h6 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        #management h4+p {
+            font-size: 20px;
+            color: #777;
+            text-align: center;
+        }
+                
+        #management p {
+            margin: 0 0 10px;
+        }
+        
+        aside > #menus {
+            padding-bottom: 10px;
+            background: #f0f0f0;
+            margin-bottom: 15px;
+        }
+
+        #management a {
+            display: inline-block;
+            font-size: 18px;
+            border: 1px solid #8f8f8f;
+            border-radius: 4px;
+            padding: 3px 15px;
+            color: #333;
+            margin-bottom: 25px;
+            transition: .1s all;
+            background: #fff;
+        }
+        #management a:hover{
+            text-decoration: none;
+        }
+        #management a>* {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        #management a:hover,
+        #management a:active,
+        #management a:focus{
+            color: #fff;
+            background: var(--infopro-col);
+            transition: .3s all
+        }
+        
+        aside #menus {
+            padding-bottom: 10px;
+            background: #f0f0f0;
+            margin-bottom: 15px;
+        }
+        
+        aside ul,aside li {
+            list-style: none;
+            padding-inline-start: 0;
+        }
+                
+        @media (max-width: 1099px) {
+            aside>div#menus .sub-menu h4 {
+                padding-right: 25px;
+            }
+        }
+        .sub-menu h4 {
+            padding: 6px 15px;
+            background: var(--infopro-col);
+            font-size: 18px;
+            color: #fff;
+            font-weight: 300;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, .1);
+            position: relative;
+        }
+        .sub-menu h4:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -4px;
+            background: var(--infopro-col);
+            height: 100%;
+            width: 4px;
+        }
+        .sub-menu h4:after {
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: -3px;
+            transform: rotate(45deg);
+            border: 4px solid blue;
+            border-color: transparent;
+            border-bottom-color: var(--infopro-col);
+        }
+        
+        ul.menu ul>li>a {
+            color: #930000;
+            font-family: "Cloud-Light", "THK2DJuly8";
+            display: inline-block;
+            padding-left: 20px;
+            line-height: initial;
+            font-size: 16px;
+        }
+        ul.menu ul>li>a:before {
+            content: '●';
+            margin-right: 5px;
+            font-size: 12px;
+        }
+        ul.menu ul>li>a:hover,
+        ul.menu ul>li>a:focus,
+        ul.menu ul>li>a:active{
+            color: #000;
+            text-decoration: none;
+        }
+        
+        .sub-menu.toggle {
+            position: relative;
+        }
+        .sub-menu.toggle {
+            cursor: pointer;
+        }
+        
+        .sub-menu.toggle:not(.active) h4 {
+            margin-bottom: 0;
+        }
+        
+        .sub-menu.toggle ul {
+            visibility: hidden;
+            height: 0;
+            overflow: hidden;
+            transition: .3s all;
+            margin: 0;
+        }
+        .sub-menu.toggle:after {
+            content: url(https://i.postimg.cc/fLzKKLTC/down.png);
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-family: "FontAwesome";
+            color: #a24d4d;
+            transform: rotate(-90deg);
+            transition: .1s all;
+        }
+        
+        .sub-menu.toggle.active:after,
+        .sub-menu.toggle.active:after {
+            transform: rotate(0deg);
+            transition: .3s all;
+            top: 8px;
+        }
+        
+        .sub-menu.toggle.active ul,
+        .sub-menu.toggle.active ul {
+            visibility: visible;
+            height: auto;
+            transition: .3s all;
+        }
+        
+        #banners ul>li {
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        
+        #banners img {
+            width: auto;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        
+        h2.heading {
+            font-size: 20px;
+        }
+        .heading {
+            background: var(--infopro-col);
+            color: #fff;
+            padding: 10px 15px 7px;
+            margin: 0;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        
+        .heading>span {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .heading>span>img {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        
+        .heading>span>span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .mb20 {
+            margin-bottom: 20px;
+        }
