@@ -53,20 +53,20 @@ li{
 }
 
 .right #profilePic,
-.right #userProfile,
-.right button{
+.right #userProfile{
     margin: 10px;
     margin-right: 0px !important;
 }
 
-.right button{
+header button{
+    display: none;
     padding: 0;
     border: none;
     background: transparent;
     color: var(--infopro-col);
 }
 
-.right button:hover{
+header button:hover{
     text-decoration: underline;
 }
 
