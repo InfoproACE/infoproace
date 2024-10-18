@@ -74,14 +74,23 @@ header button:hover{
 }
 
 /* LOGO */
+.mainlogo {
+  width: 100%; /* ทำให้โลโก้ปรับขนาดตาม parent */
+  max-width: 300px; /* กำหนดขนาดสูงสุดเพื่อไม่ให้ใหญ่เกินไป */
+  height: auto; /* รักษาสัดส่วนของภาพ */
+}
 
 @media (max-width: 570px) {
-    .mainlogo {
-        content: url('https://i.postimg.cc/BZkHV2xP/image.png');
-    }
+  .mainlogo {
+    content: url('https://i.postimg.cc/BZkHV2xP/image.png');
+  }
 }
 
 @media (max-width: 445px) {
+  .mainlogo {
+    max-width: 50px;
+  }
+    
     .header {
       border-right: 1px solid transparent !important;
     }
