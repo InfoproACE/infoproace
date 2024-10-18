@@ -5,25 +5,6 @@
     margin: 20px 0;
 }
 
-.menu-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.menu-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .icon-container {
     background-color: #ff0000;
     color: #fff;
@@ -38,10 +19,4 @@
 
 .icon-container i {
     font-size: 18px;
-}
-
-.menu-item h3 {
-    margin: 0;
-    font-size: 18px;
-    color: #333;
 }
