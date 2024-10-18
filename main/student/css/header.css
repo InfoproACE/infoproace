@@ -53,6 +53,7 @@ li{
 .right #userProfile,
 .right button{
     margin: 10px;
+    margin-right: 0px !important;
 }
 
 .right button{
