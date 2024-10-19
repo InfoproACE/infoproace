@@ -1,1 +1,77 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Login</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/s-login.css">
+</head>
+<body>
+    <header>
+        <div class="logos">
+            <img src="https://i.postimg.cc/fLDrxwtf/image.png" alt="Window Logo" class="window" style=" width: 202.8px; ">
+            <img src="https://i.postimg.cc/BZkHV2xP/image.png" alt="Phone Logo" class="phone">
+        </div>\
+    </header>
+    <!-- ระบบทำข้อสอบ -->
+    <div class="flex pagess">
+        <div class="login-container">
+            <div class="pd-20 bor">
+                <h2>เข้าสู่ระบบครู</h2>
+                <form id="loginForm" onsubmit="return login(event)">
+                    <div class="flex">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <br>
+                    <div class="flex">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <br>
+                    <div class="bt">
+                        <button type="submit">เข้าสู่ระบบ</button>
+                        <p id="error" class="error-message" style="color: red;"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        <script>
+            async function login(event) {
+                event.preventDefault();  // ป้องกันการรีเฟรชหน้าเมื่อกดเข้าสู่ระบบ
+                const username = document.getElementById("username").value;
+                const password = document.getElementById("password").value;
+    
+                try {
+                    const response = await fetch("json/teacher.json"); 
+                    if (!response.ok) {
+                        throw new Error("เกิดข้อผิดพลาดในการดึงข้อมูล");
+                    }
+                    
+                    const students = await response.json();
+                    const student = students.find(s => s.username === username && s.password === password);
+    
+                    if (student) {
+                        // เก็บข้อมูลผู้ใช้ใน sessionStorage และนำไปยังหน้าถัดไป
+                        sessionStorage.setItem("loggedInUser", JSON.stringify(student));
+                        window.location.href = "teacher.html";  
+                    } else {
+                        document.getElementById("error").textContent = "ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง";
+                    }
+                } catch (error) {
+                    console.error("เกิดข้อผิดพลาด:", error);
+                    document.getElementById("error").textContent = "เกิดข้อผิดพลาดในการดึงข้อมูล";
+                }
+            }
+        </script>
+    </div>
+    
+    
+    <script src="js/t-login.js"></script>
+    <script src="js/logo.js"></script>
+</body>
+</html>
