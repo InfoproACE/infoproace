@@ -1,0 +1,42 @@
+body{
+    margin: var(--0-2-rem);
+    padding: 0;
+    font-family:  sans-serif;
+    width: -webkit-fill-available;
+}
+
+@media (min-width: 960px) {
+    body {
+      margin: var(--0-5-rem);
+    }
+}
+
+@media (min-width: 1120px) {
+    body {
+      margin: var(--0-8-rem);
+    }
+}
+
+@media (min-width: 1280px) {
+    body {
+      margin: var(--0-10-rem);
+    }
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+a{
+    text-decoration: var(--n);
+    color: var(--infopro-col);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.pd-20{
+    padding: 20px;
+}
