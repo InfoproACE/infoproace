@@ -1,1 +1,107 @@
+header{
+    height: 70px;
+    border-bottom: 1px solid var(--infopro-col);
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+}
 
+header .logos{
+    display: flex;
+    padding: 10px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+}
+
+ul.header{
+    text-align: end;
+    border-right: 1px solid var(--infopro-col);
+    padding-right: 5px;
+    padding-inline-start: 0;
+}
+
+li{
+    list-style-type: var(--n);
+}
+
+.button{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    margin-left: 10px;
+}
+
+.button a{
+    display: flex;
+    align-items: center;
+}
+
+#profilePic{
+    border-radius: 100px;
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+}
+#userProfile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.right #profilePic,
+.right #userProfile{
+    margin: 10px;
+    margin-right: 0px !important;
+}
+
+header button {
+    border: 2px solid;
+    background: #ffffff;
+    position: absolute;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-color: #ddd;
+    color: #000;
+    right: 0;
+    transition: .5s;
+}
+
+header button:hover{
+    padding-right: 25px;
+}
+
+/* LOGO */
+
+.phone {
+  display: none;
+}
+
+/* แสดงโลโก้เฉพาะสำหรับมือถือและแท็บเล็ต (หน้าจอ ≤ 1024px) */
+@media (max-width: 1024px) {
+  .window {
+    display: none; /* ซ่อนโลโก้สำหรับหน้าจอขนาดใหญ่ */
+    max-width: 202.8px;
+  }
+  .phone {
+    display: block; /* แสดงโลโก้สำหรับมือถือ */
+    width: 100%; 
+    height: auto;
+    max-width: 50px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 445px) {
+    .header {
+      border-right: 1px solid transparent !important;
+    }
+  
+    .button {
+      display: none;
+    }
+  }
