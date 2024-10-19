@@ -23,7 +23,7 @@ label {
 input {
     background: transparent;
 }
-
+/*
 button {
     width: 100%;
     padding: 10px;
@@ -37,7 +37,7 @@ button {
 button:hover {
     background-color: #218838;
 } */
-.login-container h2{
+.bor h2{
     align-items: center;
     justify-content: center;
     display: flex;
